@@ -1,0 +1,20 @@
+#defining the function gradingStudents with grades as input argument
+def gradingStudents(grades):
+    #Initializing for loop to scan along the elements in list grade 
+    for i in range(0,grades_count):
+        # giving the given conditions
+        if(grades[i]%5>=3 and grades[i]%5!=0 and grades[i]>=38):
+            while(grades[i]%5!=0):
+                grades[i]= grades[i]+1
+                continue
+    return grades
+#getting inputs 
+grades_count = int(input().strip())
+grades = []
+# Appending elements to list
+for i in range(grades_count):
+    grades_item = int(input().strip())
+    grades.append(grades_item)
+result = gradingStudents(grades)
+for i in range (0,grades_count):
+    print(result[i])
